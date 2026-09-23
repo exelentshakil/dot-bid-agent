@@ -26,13 +26,13 @@ export function StripeHero({
   onExplore?: () => void;
 }) {
   const [streamSimulating, setStreamSimulating] = useState(false);
-  const [simulatedChunks, setSimulatedChunks] = useState(14);
+  const [simulatedSheets, setSimulatedSheets] = useState(14);
 
   const handleSimulateStream = () => {
     setStreamSimulating(true);
-    setSimulatedChunks(0);
+    setSimulatedSheets(0);
     const interval = setInterval(() => {
-      setSimulatedChunks((prev) => {
+      setSimulatedSheets((prev) => {
         if (prev >= 24) {
           clearInterval(interval);
           setStreamSimulating(false);
@@ -120,19 +120,19 @@ export function StripeHero({
               </div>
             </div>
 
-            {/* Stripe Institutional Enterprise Client Logos Strip */}
+            {/* State DOT Portals & Civil Infrastructure Specifications */}
             <div className="pt-8 border-t border-[var(--color-border)]/80 max-w-2xl">
               <p className="text-xs font-semibold uppercase tracking-wider text-[var(--color-text-secondary)] mb-3">
-                Trusted by modern enterprise engineering teams
+                Engineered for state DOT portals &amp; civil letting systems
               </p>
-              <div className="flex flex-wrap items-center justify-between gap-5 opacity-90 grayscale hover:grayscale-0 transition-all">
-                <span className="text-[15px] sm:text-base font-bold tracking-tighter text-[var(--color-text-primary)] font-sans">amazon</span>
-                <span className="text-[15px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-sans">NVIDIA</span>
-                <span className="text-[15px] sm:text-base font-semibold tracking-wide text-[var(--color-text-primary)] font-sans">Ford</span>
-                <span className="text-[15px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-sans">coinbase</span>
-                <span className="text-[15px] sm:text-base font-semibold tracking-tight text-[var(--color-text-primary)] font-sans">Google</span>
-                <span className="text-[15px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-sans">shopify</span>
-                <span className="text-[15px] sm:text-base font-medium tracking-tight text-[var(--color-text-primary)] font-sans">mindbody</span>
+              <div className="flex flex-wrap items-center justify-between gap-5 opacity-90 transition-all">
+                <span className="text-[14px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-mono">NCDOT</span>
+                <span className="text-[14px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-mono">SCDOT</span>
+                <span className="text-[14px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-mono">VDOT</span>
+                <span className="text-[14px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-mono">GDOT</span>
+                <span className="text-[14px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-mono">FDOT</span>
+                <span className="text-[14px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-mono">AASHTO</span>
+                <span className="text-[14px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-mono">FHWA</span>
               </div>
             </div>
           </div>
@@ -145,20 +145,20 @@ export function StripeHero({
                 <div className="flex items-center gap-2 min-w-0">
                   <span className="h-2.5 w-2.5 rounded-full bg-[#00D924] animate-pulse shrink-0" />
                   <span className="text-sm font-bold text-[var(--color-text-primary)] truncate">
-                    {((siteConfig as any).hud?.title) || 'Edge Engine • Telemetry Bus'}
+                    {'DOT Letting Intake • Plan Sheet Parser'}
                   </span>
                 </div>
                 <span className="rounded-[4px] bg-[#533AFD]/10 text-[#533AFD] dark:bg-[#7A68FF]/20 dark:text-[#7A68FF] px-2.5 py-0.5 text-xs font-semibold border border-[#533AFD]/20 shrink-0 whitespace-nowrap">
-                  {((siteConfig as any).hud?.statusBadge) || 'Sub-50ms Edge'}
+                  {'NCDOT Active Feed'}
                 </span>
               </div>
 
               {/* Real-time Subsystem Status Rows (Schema-Driven from siteConfig) */}
               <div className="space-y-3">
                 {(((siteConfig as any).hud?.subsystems) || [
-                  { label: 'INGESTION ENGINE', value: 'Automated Pipeline Sync', metric: '100% Parsed', subtext: '0 schema errors' },
-                  { label: 'AI INFERENCE GATEWAY', value: 'Circuit Breaker Active', metric: '99.98% SLA', subtext: 'Dual-model failover' },
-                  { label: 'STATE RECONCILIATION', value: 'PostgreSQL Realtime', metric: '14.2ms P99', subtext: '0 duplicate writes' },
+                  { label: 'DOT LETTING MONITOR', value: 'NCDOT & Regional Scraper', metric: '142 Active', subtext: '0 missed lettings' },
+                  { label: 'BARN MOBILIZATION MATRIX', value: 'Huntersville Shop Base', metric: '14.2 mi P99', subtext: 'Haul tier verified' },
+                  { label: 'PRIME GC PLAN HOLDERS', value: 'Blythe, Lane & Rea', metric: '3 Estimators', subtext: 'Direct emails linked' },
                 ]).map((row: any, i: number) => (
                   <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/80">
                     <div className="space-y-0.5 min-w-0 pr-2">
@@ -179,22 +179,22 @@ export function StripeHero({
                   <div className="flex items-center justify-between text-xs text-slate-300 pb-1.5 border-b border-slate-800">
                     <span className="flex items-center gap-2 font-medium">
                       <Radio className="w-3.5 h-3.5 text-[#00D4FF] animate-pulse" />
-                      HLS CDN Stream Buffer
+                      DOT Plan Sheet Takeoff Parser
                     </span>
-                    <span className="font-mono text-xs text-slate-400">{simulatedChunks} / 24 Chunks</span>
+                    <span className="font-mono text-xs text-slate-400">{simulatedSheets} / 24 Sheets</span>
                   </div>
 
                   {/* Buffer Progress Bar */}
                   <div className="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
                     <div
                       className="bg-gradient-to-r from-[#533AFD] via-[#00D4FF] to-emerald-400 h-full rounded-full transition-all duration-300"
-                      style={{ width: `${(simulatedChunks / 24) * 100}%` }}
+                      style={{ width: `${(simulatedSheets / 24) * 100}%` }}
                     />
                   </div>
 
                   <div className="flex items-center justify-between pt-1">
                     <span className="text-xs text-slate-300">
-                      Throughput: <strong className="text-emerald-400 font-semibold">48.2 MB/s</strong>
+                      Master Pricing: <strong className="text-emerald-400 font-semibold">100% Rate Match</strong>
                     </span>
                     <button
                       type="button"
@@ -205,12 +205,12 @@ export function StripeHero({
                       {streamSimulating ? (
                         <>
                           <RefreshCw className="w-3 h-3 animate-spin" />
-                          Streaming...
+                          Extracting Line Items...
                         </>
                       ) : (
                         <>
                           <Play className="w-3 h-3" />
-                          Simulate Stream
+                          Simulate Takeoff
                         </>
                       )}
                     </button>
@@ -222,9 +222,9 @@ export function StripeHero({
               <div className="flex items-center justify-between text-xs text-[var(--color-text-secondary)] pt-1 font-medium">
                 <span className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#00D924]" />
-                  Replit Socket Bottleneck Fixed
+                  Master Rate Sheet Sync Active
                 </span>
-                <span className="text-[var(--color-text-muted)]">PgBouncer + Redis</span>
+                <span className="text-[var(--color-text-muted)]">Human Review Gate</span>
               </div>
             </div>
           </div>

@@ -30,22 +30,22 @@ export function EnterpriseMediaShowcase() {
   // 3 Fully Bespoke, Domain-Specific Editorial Architectural Pillars
   const architecturalPillars = [
     {
-      id: 'pillar-video',
-      tag: 'Cloudflare Stream HLS',
-      title: 'Sub-50ms Video Playback & Edge Caching',
-      description: 'Replaced Replit raw socket bottlenecks with adaptive bitrate HLS CDN delivery, guaranteeing instant zero-buffer video playback for 100,000 members.',
+      id: 'pillar-letting',
+      tag: 'DOT Letting Intake',
+      title: 'Automated State Letting & Plan Sheet Scraper',
+      description: 'Continuous monitors across NCDOT, SCDOT, and VDOT portals extracting line-item specs, proposal PDFs, and addendums before letting deadlines.',
     },
     {
-      id: 'pillar-iap',
-      tag: 'StoreKit 2 JWS',
-      title: 'Cryptographic Entitlement & Promo Engine',
-      description: 'Decoupled App Store Server Notifications v2 with idempotent Inngest event queues, eliminating duplicate promo redemptions and dropped subscriptions.',
+      id: 'pillar-distance',
+      tag: 'GIS Barn Distance',
+      title: 'Huntersville Barn Radius & Mobilization Matrix',
+      description: 'Calculates exact driving mileage from the shop/barn to project stations to budget equipment haul costs, fuel surcharges, and crew drive time.',
     },
     {
-      id: 'pillar-ai',
-      tag: 'Dual LLM Circuit Breaker',
-      title: 'Zero-Hang Workout Synthesis & Fallback Bank',
-      description: 'OpenAI GPT-4o with instant 1500ms circuit breaker tripping to 180+ local cached workout routines, ensuring users never see a loading hang during workouts.',
+      id: 'pillar-pricing',
+      tag: 'Master Rate Engine',
+      title: 'Deterministic Spreadsheet Unit Price Matching',
+      description: 'Directly applies your pricing formulas for silt fence, seeding, matting, and stone so calculations match your historical margins without hallucination.',
     },
   ];
 
@@ -78,9 +78,9 @@ export function EnterpriseMediaShowcase() {
             <div className="flex items-center justify-between">
               <div className="inline-flex items-center gap-2 rounded-full bg-black/75 backdrop-blur-md px-3.5 py-1.5 text-xs font-mono text-white border border-white/20 shadow-lg">
                 <span className="h-2 w-2 rounded-full bg-[#00D924] animate-pulse" />
-                <span className="font-semibold tracking-wide" style={{ color: '#ffffff' }}>Live High-Throughput Node</span>
+                <span className="font-semibold tracking-wide" style={{ color: '#ffffff' }}>Live Letting Feed</span>
                 <span className="text-white/40">|</span>
-                <span className="text-slate-300" style={{ color: '#CBD5E1' }}>Edge PoP #904</span>
+                <span className="text-slate-300" style={{ color: '#CBD5E1' }}>NCDOT Division 10</span>
               </div>
 
               <div className="flex items-center gap-2">
@@ -110,19 +110,19 @@ export function EnterpriseMediaShowcase() {
                 className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider !text-[#00D4FF] font-bold"
               >
                 <span className="h-1.5 w-1.5 rounded-full bg-[#00D4FF] animate-pulse" />
-                Autonomous Execution Engine
+                Subcontractor Estimating Engine
               </div>
               <h2
                 style={{ color: '#ffffff' }}
                 className="text-2xl sm:text-3xl lg:text-[32px] font-extrabold tracking-tight !text-white leading-tight drop-shadow-sm"
               >
-                Building the economic &amp; operational infrastructure for {siteConfig.name}.
+                Automated bidding intelligence for {siteConfig.name}.
               </h2>
               <p
                 style={{ color: '#E2E8F0' }}
                 className="text-xs sm:text-sm !text-slate-200 leading-relaxed font-normal"
               >
-                Cryptographically verifiable event streams, deterministic fallbacks, and real-time sub-50ms data pipelines running at production scale.
+                Continuous letting intake, barn distance calculations, spreadsheet rate matching, and prime GC targeting with mandatory human signoff.
               </p>
             </div>
           </div>
@@ -133,12 +133,12 @@ export function EnterpriseMediaShowcase() {
           {/* Header */}
           <div className="max-w-3xl mb-8 sm:mb-10">
             <div className="text-xs font-mono uppercase tracking-wider text-[#533AFD] dark:text-[#7A68FF] font-semibold mb-1">
-              Field-Tested Architecture
+              Civil Construction & Highway Estimating
             </div>
             <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--color-text-primary)]">
               Powering operations of all sizes.{' '}
               <span className="text-[var(--color-text-secondary)] opacity-75 font-normal">
-                Built to adapt seamlessly from rapid technical spikes to 100K+ concurrent scale.
+                Engineered for erosion control, hydroseeding, and civil subcontractors bidding state DOT and commercial site work.
               </span>
             </h3>
           </div>
@@ -149,7 +149,7 @@ export function EnterpriseMediaShowcase() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={mediaConfig.caseStudyPhoto.url}
-                alt="High-performance mobile workout streaming interface"
+                alt="Civil construction and highway grading equipment executing erosion control operations"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -160,7 +160,7 @@ export function EnterpriseMediaShowcase() {
                   Production Case Study
                 </span>
                 <span className="px-2.5 py-1 rounded-[4px] bg-[#533AFD]/90 text-white backdrop-blur-md text-[10px] font-mono font-semibold">
-                  Sub-50ms P99 Latency
+                  Sub-4 Min Bid Package
                 </span>
               </div>
             </div>
@@ -168,22 +168,22 @@ export function EnterpriseMediaShowcase() {
             <div className="p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
               <div className="space-y-1 max-w-2xl">
                 <div className="text-base sm:text-lg font-bold text-[var(--color-text-primary)]">
-                  Enterprise Infrastructure Consolidation
+                  NCDOT Subcontractor Letting & Estimate Automation
                 </div>
                 <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] opacity-85 leading-relaxed">
-                  Eliminated Replit cold starts and socket timeouts through Cloudflare CDN edges and automated fallback circuit breakers.
+                  Transformed 200-page state letting notice into itemized subcontractor quote packages with matched prime GC estimators in 3.2 minutes.
                 </p>
               </div>
 
               <div className="flex items-center gap-6 text-xs font-mono text-[var(--color-text-secondary)] shrink-0">
                 <div>
-                  <div className="text-lg font-bold text-[var(--color-text-primary)]">99.999%</div>
-                  <div className="text-[10px] opacity-75">SLA Uptime</div>
+                  <div className="text-lg font-bold text-[var(--color-text-primary)]">100%</div>
+                  <div className="text-[10px] opacity-75">Spreadsheet Sync</div>
                 </div>
                 <div className="h-8 w-[1px] bg-[var(--color-border)]" />
                 <div>
-                  <div className="text-lg font-bold text-[#533AFD] dark:text-[#7A68FF]">100K+</div>
-                  <div className="text-[10px] opacity-75">Scale Tested</div>
+                  <div className="text-lg font-bold text-[#533AFD] dark:text-[#7A68FF]">0 Sends</div>
+                  <div className="text-[10px] opacity-75">Without Approval</div>
                 </div>
               </div>
             </div>

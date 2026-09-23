@@ -23,25 +23,25 @@ const FEATURES: FeatureItem[] = [
   {
     id: 'services',
     icon: LayoutGrid,
-    title: 'Professional services.',
-    description: 'Get tailored architectural guidance from senior systems engineers on Cloudflare Stream CDN, Replit backend stabilization, and Apple StoreKit 2 integration.',
-    linkText: 'View services & workflow',
+    title: 'DOT letting intake & scrapers.',
+    description: 'Continuous daily monitors across NCDOT, SCDOT, VDOT, and regional commercial plans to extract item sheets, letting dates, and project locations before deadlines.',
+    linkText: 'View intake pipeline & workflow',
     action: 'pipeline',
   },
   {
     id: 'certifications',
     icon: Users,
-    title: 'Securiti-certified experts.',
-    description: 'Work with a validated AI governance architect specializing in Gartner AI TRiSM, NIST AI RMF, and inline LLM firewalls (Cert ID: 14B411BCE-14B411A3D-1451CFE76).',
-    linkText: 'View certifications & audit',
+    title: 'Spreadsheet formula precision.',
+    description: 'Connect directly to your master unit rate workbook for silt fence, hydroseeding, matting, and stone so calculations match your exact historical pricing without hallucination.',
+    linkText: 'View rate engine & rules',
     action: 'governance',
   },
   {
     id: 'retainers',
     icon: MessageSquare,
-    title: 'Support & retainers.',
-    description: 'Receive ongoing operational monitoring, Inngest background event queues, automated workout generation failover, and strict 99.999% SLA response tracking.',
-    linkText: 'View execution logs & SLA',
+    title: 'Human estimator review gates.',
+    description: 'Enforce a mandatory review step before any bid is finalized, generating ready-to-send proposal packets for prime GCs with your explicit 1-click authorization.',
+    linkText: 'View execution logs & audit',
     action: 'logs',
   },
 ];
@@ -74,9 +74,9 @@ export function StripeFeatureGrid({
         {/* Two-Tone Section Headline with Stripe Opacity Balance */}
         <div className="max-w-3xl mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-[-0.02em] text-[var(--color-text-primary)]">
-            Powering businesses of all sizes.{' '}
+            Field-tested subcontractor bidding architecture.{' '}
             <span className="text-[var(--color-text-secondary)] opacity-75 font-normal">
-              Scale your mobile backend on a battle-tested architecture that adapts to your growth.
+              Purpose-built for erosion control and civil subcontractors bidding state highway and commercial site contracts.
             </span>
           </h2>
         </div>
